@@ -10,9 +10,13 @@ void test_my_func(void) {
 
 int main() {
   CU_initialize_registry();
+  CU_basic_set_mode(CU_BRM_VERBOSE);
+
   CU_pSuite suite = CU_add_suite("AddTestSuite", 0, 0);
   CU_add_test(suite, "test of my_func()", test_my_func);
+
   CU_basic_run_tests();
   CU_cleanup_registry();
+
   return 0;
 }
