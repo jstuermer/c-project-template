@@ -1,6 +1,6 @@
 # Compiler and flags
 CC = gcc-14
-CFLAGS =  -Wall -Wextra
+CFLAGS = -std=c17 -Wall -Wextra
 INCLUDES = -I ./include 
 TEST_INCLUDES = -I /opt/homebrew/Cellar/cunit/2.1-3/include -L /opt/homebrew/Cellar/cunit/2.1-3/lib
 
