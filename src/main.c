@@ -1,6 +1,5 @@
+#include <project/my_func.h>
 #include <stdio.h>
-
-#include "my_func.h"
 
 int main() {
   int x = my_func();
